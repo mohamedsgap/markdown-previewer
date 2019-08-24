@@ -1,33 +1,23 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+//import FormGroup from 'react-bootstrap/lib/FormGroup'
+//import ControlLabel from 'react-bootstrap/lib/ControlLabel'
+//import FormControl from 'react-bootstrap/lib/FormControl'
+import Form from 'react-bootstrap/Form'
 
-// GLOBAL VARS
-const buttonTypes = {
-  'fa fa-bold': '**',
-  'fa fa-italic': '_',
-  'fa fa-quote-left': '> ',
-  'fa fa-link': '[Link]',
-  'fa fa-picture-o': '![Alt Text]',
-  'fa fa-list-ol': '1. ',
-  'fa fa-list': '- ',
-  'fa fa-code': '`' };
-
-const buttonStyles = {
-  'fa fa-bold': 'Strong Text',
-  'fa fa-italic': 'Emphasized Text',
-  'fa fa-quote-left': 'Block Quote',
-  'fa fa-link': '(http://)',
-  'fa fa-picture-o': '(http://)',
-  'fa fa-list-ol': 'List Item',
-  'fa fa-list': 'List Item',
-  'fa fa-code': 'Inline Code' };
-
-
-
+const marked = require('marked');
 class App extends React.Component {
   render() {
     return(
-      <div>Markdown Previewer</div>
+      <div className='App'>
+        <Form.Group controlId='formControlsTextarea'>
+          <Form.Label>Markdoen Input!</Form.Label>
+          <Form.Control  componentClass='textarea' placeholder='Input Markdown'>
+          </Form.Control >
+        </Form.Group>
+
+
+      </div>
     );
   }
 }
