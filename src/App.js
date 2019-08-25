@@ -21,11 +21,13 @@ class App extends React.Component {
     return(
       <div className='App container'>
         <div>
-          <Form.Group controlId='formControlsTextarea'>
+          <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Markdoen Input!</Form.Label>
             <Form.Control  
-            componentclass='textarea' 
-            placeholder='input Markdown' 
+            componentclass='textarea'
+            placeholder='input Markdown'
+            as="textarea" 
+            rows="10" 
             value={markdown} 
             onChange = {(event)=> this.updateMarkdown(event.target.value)}
             
