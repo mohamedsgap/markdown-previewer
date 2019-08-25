@@ -9,14 +9,20 @@ const marked = require('marked');
 class App extends React.Component {
   render() {
     return(
-      <div className='App'>
-        <Form.Group controlId='formControlsTextarea'>
-          <Form.Label>Markdoen Input!</Form.Label>
-          <Form.Control  componentClass='textarea' placeholder='Input Markdown'>
-          </Form.Control >
-        </Form.Group>
+      <div className='App container'>
+        <div>
+          <Form.Group controlId='formControlsTextarea'>
+            <Form.Label>Markdoen Input!</Form.Label>
+            <Form.Control  componentClass='textarea' placeholder='Input Markdown'>
+            </Form.Control >
+          </Form.Group>
+        </div>
+        <div>
+          <h1>Markdown Output!</h1>
+          <div>
 
-
+          </div>
+        </div>
       </div>
     );
   }
