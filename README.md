@@ -1,5 +1,5 @@
 # Markdown Previewer Project
-Building a a Markdown Previewer to convert text into Markdown!
+Building a a Markdown Previewer to Markdown syntax into HTML!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
