@@ -5,7 +5,7 @@ import './App.css'
 //import FormControl from 'react-bootstrap/lib/FormControl'
 import Form from 'react-bootstrap/Form'
 
-const marked = require('marked');
+let marked = require('marked');
 class App extends React.Component {
   state= {
     markdown: ''
@@ -24,18 +24,19 @@ class App extends React.Component {
           <Form.Group controlId='formControlsTextarea'>
             <Form.Label>Markdoen Input!</Form.Label>
             <Form.Control  
-            componentClass='textarea' 
-            placeholder='Input Markdown' 
+            componentclass='textarea' 
+            placeholder='input Markdown' 
             value={markdown} 
             onChange = {(event)=> this.updateMarkdown(event.target.value)}
+            
             >
             </Form.Control >
           </Form.Group>
         </div>
         <div>
           <h2>Markdown Output!</h2>
-          <div>
-
+          <div dangerouslySetInnerHTML={{__html: marked(markdown) }}>
+            
           </div>
         </div>
       </div>
